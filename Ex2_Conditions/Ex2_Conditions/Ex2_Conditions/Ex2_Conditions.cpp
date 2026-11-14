@@ -72,21 +72,21 @@ battery >= 0 && battery <= 100: 0
 0 <= battery <= 100: 1
 
 predictions case5:
-battery: 15
+battery: -5
 charging: 1
 battery < 20: 1
 battery < 20 && !charging: 0
 battery == 100 || charging: 1
-battery >= 0 && battery <= 100: 1
+battery >= 0 && battery <= 100: 0
 0 <= battery <= 100: 1
 
 actual output:
-battery: 15
+battery: -5
 charging: 1
 battery < 20: 1
 battery < 20 && !charging: 0
 battery == 100 || charging: 1
-battery >= 0 && battery <= 100: 1
+battery >= 0 && battery <= 100: 0
 0 <= battery <= 100: 1
 
 
